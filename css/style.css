@@ -10,7 +10,7 @@ body {
 	font-size: 12px
 }
 
-a {
+a ,a:focus, a:hover{
 	color: #aaa;
 	text-decoration: none;
 }
@@ -23,19 +23,25 @@ nav {
 
 nav ul {
  	float: right;
+ 	padding-right: 50px;
  }
 
-nav img{
+nav img {
 		width: 78px; height: 78px;
+		padding: 15px;
 }
 ul li {
 	display: inline-block;
+	padding: 5px;
 }
 
 ul li a {
 	display: inline-block;
 	border: 1px solid #f0f0f0;
-	padding: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
 	color: white;
 	transition: background-color 1s ease;
 }
@@ -46,7 +52,7 @@ ul li a:hover {
 
 
 .poster-wrapper div{
-	width: 33%;
+	/*width: 33%;*/
 	display: inline-block; 
 	text-align: center;
 	padding: 20px;
@@ -147,4 +153,55 @@ table tr td button {
 	border-radius: 5px;
 
 }
+.text-wrapper div {
+	width: 20%;
+	display: inline-table; 
+}
+.text-wrapper div h2 {
+	font-size: 25px;
+	color: white;
+	margin: 0;
+}
+
+/*.text-wrapper div div ul li {
+	border: none;
+	color: #334455;
+	}*/
+
+
+
+.box-wrapper div img {
+	border: 5px solid #333
+}
+
+@media(max-width: 700px) {
+	.poster-wrapper div {
+		width:49%;
+	}
+	/*.poster-wrapper div:hover {
+		transform: ;*/
+	
+	ul li a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	ul li {
+		margin: 0px;
+	}
+
+	nav ul{
+		padding: 0px;
+	}
+}
+
+@media(max-width: 420px) {
+	.poster-wrapper div {
+		width: 100%;
+	}
+}
+}
+
 
